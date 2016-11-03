@@ -1,0 +1,127 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(block
+	(rect -152 472 48 736)
+	(text "Circuito gerador de clock e do sinal de reset" (rect 5 5 376 19)(font "Arial" ))	(text "inst2" (rect 5 262 46 276)(font "Arial" ))	(block_io "HLT" (input))
+	(block_io "S5_start" (input))
+	(block_io "S5_clear" (input))
+	(block_io "S6_start" (input))
+	(block_io "S6_clear" (input))
+	(block_io "S7_start" (input))
+	(block_io "S7_clear" (input))
+	(block_io "CLK" (output))
+	(block_io "CLKN" (output))
+)
+(block
+	(rect -136 904 24 1376)
+	(text "Decodificador de instrucoes, contador em anel e matriz de controle" (rect 5 5 550 19)(font "Arial" ))	(text "inst3" (rect 5 470 46 484)(font "Arial" ))	(block_io "CLK" (input))
+	(block_io "I4" (input))
+	(block_io "I5" (input))
+	(block_io "I6" (input))
+	(block_io "I7" (input))
+	(block_io "CLRN" (input))
+	(block_io "HLTN" (output))
+	(block_io "Eu" (output))
+	(block_io "Su" (output))
+	(block_io "Ea" (output))
+	(block_io "EiN" (output))
+	(block_io "LiN" (output))
+	(block_io "LbN" (output))
+	(block_io "LoN" (output))
+	(block_io "LaN" (output))
+	(block_io "CeN" (output))
+	(block_io "LmN" (output))
+	(block_io "Ep" (output))
+	(block_io "Cp" (output))
+)
+(block
+	(rect -128 -264 32 376)
+	(text "SomadorSubtrator, acumulador A, registrador B e circuitos de saida" (rect 5 5 550 19)(font "Arial" ))	(text "inst1" (rect 5 638 46 652)(font "Arial" ))	(block_io "BUS3" (input))
+	(block_io "CLK" (input))
+	(block_io "_LB" (input))
+	(block_io "BUS7" (input))
+	(block_io "BUS6" (input))
+	(block_io "BUS2" (input))
+	(block_io "BUS5" (input))
+	(block_io "BUS1" (input))
+	(block_io "BUS4" (input))
+	(block_io "BUS0" (input))
+	(block_io "_LO" (input))
+	(block_io "B0" (output))
+	(block_io "B1" (output))
+	(block_io "B2" (output))
+	(block_io "B3" (output))
+	(block_io "B4" (output))
+	(block_io "B5" (output))
+	(block_io "B6" (output))
+	(block_io "B7" (output))
+	(block_io "L0" (output))
+	(block_io "L1" (output))
+	(block_io "L2" (output))
+	(block_io "L3" (output))
+	(block_io "L4" (output))
+	(block_io "L5" (output))
+	(block_io "L6" (output))
+	(block_io "L7" (output))
+)
+(block
+	(rect -136 -1200 64 -328)
+	(text " Contador de programa, memoria e registrador de instrucoes " (rect 5 5 492 19)(font "Arial" ))	(text "inst" (rect 5 870 38 884)(font "Arial" ))	(block_io "BUS1" (input))
+	(block_io "BUS2" (input))
+	(block_io "BUS3" (input))
+	(block_io "BUS4" (input))
+	(block_io "BUS5" (input))
+	(block_io "BUS6" (input))
+	(block_io "BUS7" (input))
+	(block_io "BUS8" (input))
+	(block_io "Cp" (input))
+	(block_io "CLK" (input))
+	(block_io "CLR" (input))
+	(block_io "Ep" (input))
+	(block_io "LM" (input))
+	(block_io "CLK" (input))
+	(block_io "A0" (input))
+	(block_io "A2" (input))
+	(block_io "A3" (input))
+	(block_io "RUN/PROG" (input))
+	(block_io "A1" (input))
+	(block_io "LB" (input))
+	(block_io "CLK" (input))
+	(block_io "LO" (input))
+	(block_io "4" (output))
+	(block_io "8" (output))
+	(block_io "9" (output))
+	(block_io "17" (output))
+	(block_io "5" (output))
+	(block_io "28" (output))
+	(block_io "29" (output))
+	(block_io "30" (output))
+	(block_io "37" (output))
+	(block_io "38" (output))
+	(block_io "39" (output))
+	(block_io "40" (output))
+	(block_io "I7" (output))
+	(block_io "I6" (output))
+	(block_io "I5" (output))
+	(block_io "I4" (output))
+)
